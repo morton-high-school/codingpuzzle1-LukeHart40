@@ -15,12 +15,8 @@ public class decipher{
         for(int i=0;i<text.length();i++){
             currentChar = text.substring(i,i+1);
             nextChar = text.substring(i+1,i+2);
-            if(currentChar.equals(nextChar)){
-                longString = currentChar + nextChar;
-                System.out.print(longString);
-            }else{
-                longString = " ";
-                System.out.print(longString);
+            if(currentChar.equals("dddddddddddddddddddddddd")){
+                System.out.print(text.substring(i));
             }
         }
     }
