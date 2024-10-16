@@ -7,16 +7,25 @@ public class decipher{
         Scanner reader = new Scanner(puzzle);
         String text = reader.nextLine();
 
-        String g = "giraffe";
-        int giraffeCount = 0;
+        String currentChar = "";
+        String nextChar = "";
+        String longString = "";
+
+        String end = "";
         for(int i=0;i<text.length();i++){
-            if(text.substring(i,i+7).equals(g)){
-                giraffeCount++;
-            }else if(giraffeCount == 10){
-                System.out.println(text.indexOf(g));
-                break;
+            currentChar = text.substring(i,i+1);
+            nextChar = text.substring(i+1,i+2);
+            if(currentChar.equals(nextChar)){
+                longString = currentChar + nextChar;
+                System.out.print(longString);
+            }else{
+                longString = " ";
+                System.out.print(longString);
             }
         }
-        System.out.println(giraffeCount);
     }
 }
+
+//USE THIS FOR LONGEST STRING OF CHARACTERS "dddddddddddddddddddddddd"
+//armadilloyournexttaskandkeywordarelocatedintheonehundredandfivecharactersafterthelongeststringofthesameconsecutivecharacter
+//Key words: armadillo
