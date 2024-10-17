@@ -10,18 +10,16 @@ public class decipher{
         String currentChar = "";
         String nextChar = "";
         String longString = "";
+        int vowelCount = 0;
 
         String end = "";
         for(int i=0;i<text.length();i++){
-            currentChar = text.substring(i,i+1);
-            nextChar = text.substring(i+1,i+2);
-            if(currentChar.equals("dddddddddddddddddddddddd")){
-                System.out.print(text.substring(i));
-            }
+            System.out.println(text.indexOf("kinnikinnik"));
         }
-    }
+    } 
 }
 
-//USE THIS FOR LONGEST STRING OF CHARACTERS "dddddddddddddddddddddddd"
-//armadilloyournexttaskandkeywordarelocatedintheonehundredandfivecharactersafterthelongeststringofthesameconsecutivecharacter
-//Key words: armadillo
+//armadillo your next task and keyword are located in the one hundred and five characters after the longest string of the same consecutive character
+//penguin your next task and keyword are located in the eighty characters after the string of length thirty with the most vowels
+//ostrich your final keyword is located in the six characters after a palindrome of length eleven
+//Key words: armadillo/penguin/ostrich
